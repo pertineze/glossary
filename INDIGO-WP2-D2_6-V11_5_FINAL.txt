@@ -1,0 +1,3384 @@
+﻿
+
+
+INDIGO-DataCloud
+
+
+Exploitation strategy and sustainability
+
+EU DELIVERABLE: D 2.6
+
+Document identifier:
+INDIGO-WP2-D2_6-V11_5_FINAL.docx1
+Date:
+14/Feb/2017
+Activity:
+WP2
+Lead Partner:
+EGI.eu
+Document Status:
+DRAFT
+Dissemination Level:
+PUBLIC
+Document Link:
+
+
+Abstract
+This report analyses, once the initial solutions and impact of the project have been established, the key elements for an exploitation strategy for INDIGO‐DataCloud solutions in relation to research Communities and provides a plan which will be implemented during the last part of the project. The exploitation methodology starts considering the technical solutions and the resource providers. A generic framework based on Cloud services provision and use by different stakeholders, like e-infrastructure providers, technology providers, ESFRIs, and research groups, is then introduced. 
+As the most relevant example, the European Open Science Cloud is then considered, guiding the research communities to further elaborate on their success metrics for the different Case Studies. Finally, the global project KPIs are re-estimated comparing with the corresponding input provided by each Case Study. 
+
+
+I. Copyright notice
+Copyright © Members of the INDIGO-DataCloud Collaboration, 2015-2018. 
+II. Delivery Slip
+
+Name
+Partner/Activity
+Date
+From
+Jesus Marco
+CSIC WP2/T2.5
+12-Feb-2017
+Reviewed by
+Moderator: D. Salomoni
+Reviewers: L.Gaido, P.Millar
+INFN, DESY
+14-Feb-2017
+Approved by
+PMB
+
+
+III. Document Log
+Issue
+Date
+Comment
+Author/Partner
+1
+6-june-2016
+Initial pre-draft, v01
+J. Marco (CSIC)
+2
+20-nov.2016
+Pre-draft discussed with EGI.eu v05
+J. Marco (CSIC)
+3
+23-nov-2016
+Pre-draft revised v06, ready for discussion in WP2
+J. Marco (CSIC)
+4
+8-dic-2016
+Initial input from WP3
+Matthew Viljoen (EGI.eu)
+5
+ 7-Feb-2017
+Included specific input from research communities
+J. Marco/F. Aguilar (CSIC)
+6
+9-Feb-2017
+WP3 input integrated
+Matthew Viljoen (EGI.eu)
+7
+11-Feb-2017
+Version ready for internal review
+J. Marco (CSIC)
+
+
+TABLE OF CONTENTS
+EXECUTIVE SUMMARY	4
+1	INTRODUCTION	6
+1.1	EU recommendations for Exploitation and Dissemination of Results	6
+2	EXPLOITATION METHODOLOGY	8
+2.1	Introduction	8
+2.2	Technical Exploitation Activities	8
+2.2.1	High level products	9
+2.2.2	Service Providers' Board	9
+2.2.3	Staged Rollout and Integration into the EGI CMD	9
+2.2.4	Future Exploitation of the Case Studies	10
+2.3	Involvement of the Industrial Partners	10
+2.4	Exploitation and Key Performance Indicators	11
+3	EXPLOITATION OF INDIGO-DATACLOUD SOLUTIONS IN A EUROPEAN OPEN SCIENCE CLOUD ECOSYSTEM	12
+3.1	A basic model to prepare exploitation: EU-OSC	13
+3.1.1	Example: using the EU-OSC ecosystem of services model to identify roles and relevant stakeholders in a Case Study in LifeWatch	15
+3.1.2	Some remarks on a Cloud based model for SaaS solutions	15
+3.2	Opportunities in new initiatives	16
+3.3	Integrating INDIGO solutions for easier exploitation	17
+3.3.1	A layered scheme to build SaaS applications using INDIGO solutions.	17
+3.3.2	Templates for external communities	18
+3.3.3	Simplifying the architectural view of INDIGO use	19
+4	ANALYSIS OF EXPLOITATION FOR THE CASE STUDIES	20
+APPENDIX: CASE STUDIES SUCCESS METRICS	24
+
+EXECUTIVE SUMMARY
+
+This report analyses, once the initial solutions and impact of the project have been established, the key elements to define an exploitation strategy for INDIGO-DataCloud solutions in relation to research communities. As an initial reminder, the “EU recommendations on Exploitation and Dissemination for H2020 projects” are introduced.
+The analysis of the exploitation methodology starts considering the technical solutions, that have been organized in the INDIGO DataCloud service catalogue. 
+Technical exploitation activities are coordinated as part of Task 3.4 (Exploitation) within WP3, so a complete updated status of these activities can be found in Deliverable D3.2, and in this deliverable only a brief overview is given, focussing on how they fit into the exploitation strategy.  
+To define the exploitation path for the research community case studies, a generic framework based on services provision and use by different stakeholders, like e-infrastructure providers, technology providers, ESFRIs, and the research groups themselves, is introduced.  
+As INDIGO-DataCloud is oriented to “cloud computing”, for our exploitation it is convenient to use a model based on the basic cloud services architecture, with three levels well identified by the industry: IaaS (infrastructure as a service), PaaS (platform as a service) and SaaS (software as a service). 
+As the most relevant example, the European Open Science Cloud is then considered, as a guiding example for the research communities to elaborate further on their success metrics.  
+The recommendation received in the first INDIGO review to reduce the gap/expertise for new communities, or research users in general, profiting of general templates that could be re-used in an easy way, is addressed by proposing different “instantiable” templates, in relation to the general scheme of use of INDIGO solutions (Common, Automated, Data and Datacenter/User oriented).
+More detailed plans are defined around the recent EGI/EUDAT/INDIGO internal calls for Thematic Services and for Competence Centers on one hand that have been pursued by the Research Communities in INDIGO, and on the other hand will provide INDIGO with new initiatives interested in exploiting INDIGO solutions. As soon as the results of these calls are known, this information will be used to get in contact and establish the corresponding exploitation plans for next three years (2018-2020). The EINFRA-12 proposal is therefore a very important opportunity to promote the INDIGO products and turn them into real services for the benefit of many user communities. It will offer a natural continuation of the INDIGO-DataCloud exploitation activities beyond the end of the project.
+Having in mind all the information presented in the previous sections, a detailed analysis of the exploitation possibilities for the applications proposed in the Case Studies promoted by each Research Community is prepared and presented under a common format (see the Appendix). Each table is divided into four sections, value, implementation, user adoption and impact.
+The global project KPI table is finally presented taking into account the previous inputs. The current values and their expected evolution indicate that the project will reach the exploitation targets proposed.
+
+1 INTRODUCTION
+This deliverable reports on the work developed within tasks T2.5, T2.41 and T3.4, aiming to provide an exploitation strategy for INDIGO products within the different Research Communities, with the final objective of assuring their sustainability.
+As indicated in the first review of the project, Research Communities are our main target, but we need to involve in the analysis the different Resource Providers, and also consider other stakeholders. 
+The following section, developed in collaboration with WP3, introduces the exploitation methodology, starting with the definition of the models for relationship with providers, identifying also further potential involvement of the industrial partners. The section also includes the definition of the KPI tables and the corresponding metrics, that are the basic indicator.
+The European Open Science Cloud (EOSC) is emerging as a promising context involving the previous actors, and we review ideas for exploitation of INDIGO solutions in this complex ecosystem. The analysis includes the point of view of the Research Communities directly involved in INDIGO through the corresponding partners, that are expected to be the main users of these solutions in this context. This analysis starts from the information gathered in the detailed templates for Success Metrics prepared for each Case Study taking into account the model proposed. 
+But before presenting this analysis, we briefly review EU recommendations on Exploitation and Dissemination for H2020 projects.
+1.1 EU recommendations for Exploitation and Dissemination of Results
+As a first step towards the presentation of an exploitation plan, the EU recommendations about the Plan for Exploitation and Dissemination of Results (PEDR) must be considered. 
+Further details can be found in the documentation provided by the Intellectual Property Rights Helpdesk2 . We comment here the key points related to this recommendations (in italic). 
+-On the obligation to exploit and disseminate the results, open access and acknowledgement of EU funding
+There is a legal obligation for partners to ensure ‘exploitation’ of the results, in particular using them in further research activities, and also including them in scientific publications. 
+Each beneficiary must also ensure open access (free of charge online access for any user) to all peer-reviewed scientific publications relating to its results.
+On the other hand, as the project does not fund specific research activities, there is no legal need to assure an open access to research data. But it is highly recommended, and examples gladly welcome, that examples of research data connected to Case Studies are deposited in a research data repository and measures taken to make it possible for third parties to access, mine, exploit, reproduce and disseminate — free of charge for any user —  the data, including associated metadata, needed to validate the results presented in scientific publications as soon as possible. 
+We will include such examples of open access in our final report.
+For results that could be incorporated in a standard, or in an agreed practice within the community, the beneficiary concerned must include a funding acknowledgment statement. 
+Also any dissemination of results (in any form, including electronic) must display the EU emblem and include the funding acknowledgment statement.
+From INDIGO project perspective, this means to turn the previous statements into facts, and incorporate them to our metrics of success, as described in section 4 below.
+
+-On the connection to the PEDR (Plan for Exploitation & Dissemination of Results)
+The following points have to be considered in the exploitation analysis:
+Key exploitable (usable) project outputs (IP)
+-Target groups, Needs, Benefits/impact
+-Dissemination activities, including Objectives, Messages, Channels
+-Evaluation: communicate, monitor responses, act 
+-Exploitation roadmap and plans for each partner to disseminate and exploit
+Categories of Results
+like for example “technical input to standards”, “procedures” directed to users and resource providers, new “software services”, “business model innovation”, etc.
+Actions for each partner
+Check that results you generate in the project are captured in the “catalogue of project results”.
+If not, add your request for changes to the Project Office.
+If you are the primary owner of one or more results:
+Complete the description and approach to IP protection
+Describe how you will make the results usable by others
+Describe concrete actions to inform the target groups (up to the end of the project)
+Fill the “Plan for dissemination and exploitation” section
+2 EXPLOITATION METHODOLOGY
+2.1 Introduction
+This section presents the methodology of how exploitation is planned and executed over the course of the project, along with the project KPIs that will be used to measure the success of this exploitation.
+We start introducing the scheme presented at the review, that is fundamental to assure the future interest of the research communities in INDIGO-DataCloud solutions.
+
+
+Figure 1: Scheme of the interaction between the different WP in the development of INDIGO services.
+The idea is not only to assure the interest of the research communities in the solutions developed by INDIGO, in an agile co-design, but also simultaneously time improve their TRL as services, and start considering the link to potential e-infrastructure service providers. With these scheme in mind, we review below different exploitation activity categories:
+2.2 Technical Exploitation Activities
+The primary aim of the INDIGO-DataCloud technical exploitation activities is to maximize the impact of the INDIGO software products by making them available, accessible and usable to users.  This is critical for the success of the project.  It must be stressed that the products of INDIGO-DataCloud may be exploited by any cloud infrastructure, however the initial focus of this activity is mainly on EGI, a major academic federation of computing and storage resource providers and a partner in INDIGO- DataCloud. Current (as opposed to planned) technical exploitation activities are coordinated as part of Task 3.4 (Exploitation) within WP3.  A complete updated status of activities may be found in Deliverable D3.2 (Status Report and Updated Plan of WP3 activities).  To avoid repetition, we give only a brief overview of these activities here, focussing on how the activities fit into the exploitation strategy.  
+2.2.1 High level products
+A prerequisite for successful exploitation is easily understanding the different software components of INDIGO. There are over 70 software components contributing to INDIGO-DataCloud, which is clearly too many for users and deployers to understand in full detail.   Three methods of classifying the software have been considered as part of this activity: a high-level view, a technical view and a deployers’ view.  Each classification has its own merits and is suitable for different audiences.  For example, the high-level view is suitable for general dissemination, and has already proved its value in the preparation of the INDIGO-DataCloud Catalogue of Services3. The technical view is suitable for technical audiences who are aware of the domain and may be searching for a particular component.   Finally, the deployers’ view is useful for the service providers actually delivering the products.
+2.2.2 Service Providers' Board
+Another key requirement for exploitation is for the software outputs to be deployed for use by the end users.  Deployment is typically done by the Service Providers, represented on the Service Providers' Board (SPB).  Coordination of the SPB is one of the activities of the WP3 Exploitation task and is an advisory body of the INDIGO-DataCloud project. The purpose of the board is to facilitate communication between Service Providers and product teams to make sure that Service Provider’s technical requirements and feedback are properly communicated to the project and evaluated, and to ensure that key information from the project is communicated to the Service Providers.
+2.2.3 Staged Rollout and Integration into the EGI CMD
+It has been stated at the beginning of this section that the primary e-Infrastructure target for exploitation in this project is EGI, a major production federation comprising over 300 data and computing data centres spread across Europe and worldwide.  EGI has a well-defined process for deploying new software onto its infrastructure, which is done using its Unified Middleware Distribution (UMD) and Cloud Middleware Distribution (CMD) channels.  New software undergoes a quality assurance procedure called EGI Staged Rollout where certified updates of the supported middleware are first released to and tested by Early Adopter sites before being made available to all sites through the production repositories. This procedure permits testing an update in a production environment that also is more heterogeneous than what is possible during the certification and verification phases. It allows for potential issues with an update to be discovered at a small scale and potential workarounds to be added to the release notes.
+Within INDIGO-DataCloud a similar process has been created which allows software outputs of the project to be deployed directly into the EGI production repositories after successfully completing INDIGO Staged Rollout.
+At the time of writing this deliverable (December 2016-February 2017) a number of software outputs have successfully passed INDIGO Staged Rollout and are ready to be released in the first version of the EGI CMD, which is about to be released.  This is an important step to the exploitation of INDIGO products EGI and clears the way to further adoption by more user communities.
+2.2.4 Future Exploitation of the Case Studies
+Over the course of the project, effort has been made in demonstrating the usefulness and applicability of the project outputs to the case studies identified in D2.4.  This lays the groundwork for future exploitation by the user communities involved in these case studies.  Many of the case studies have used resources made available by partners on the Pilot Preview Testbed, coordinated by WP3.  Before the end of the project, it is important that plans be made to move these case studies from the Pilot Preview Testbed onto more permanent infrastructure such as the one that will be provided in the future EU e-infrastructure platform being promoted by INDIGO, EGI and EUDAT.  
+Naturally, the ideal situation would be for the services developed as part of the case studies to succeed in providing additional value to the user communities by exploiting INDIGO outputs and for the services to evolve into full production services, run by Service Providers for use by the communities and backed up by a Service Level Agreement (SLA).   Although it may be optimistic to hope that this evolution completes prior to the end of the INDIGO project for all case studies, it is nevertheless possible to form the foundation of this work by completing the following tasks for each case study:
+Obtain the list of INDIGO software components that are currently being used.  Ensure that each component has passed INDIGO Staged Rollout and is readily deployable on EGI infrastructure.
+Understand the resources that the case study is currently using. 
+Understand who the current Resource Provider is – whether they are part of EGI or elsewhere
+Understand what the plans are for moving from testing into production, assuming that the case study has been successful.  This includes any timeframe for a transition into production, any dependencies that need to be satisfied in order for this to take place, anticipated resources that are needed for production service delivery.  Finally, understand the funding model, assuming that this has been defined.
+Armed with this information, initial steps may be taken in identifying Service Providers, performing technical steps such as setting up Virtual Organizations (VOs) and – where appropriate – migrate existing test services from the Pilot Preview Testbed. This point of view, from WP3, is complemented with the plans requested for the Success Metrics of Case Studies from WP2 that are presented in more detail in section 3.
+2.3 Involvement of the Industrial Partners
+Discussions have been ongoing between the INDIGO Project and Industrial Partners such as ATOS and T-Systems in identifying useful outputs of INDIGO that are potentially readily exploitable by commercial companies.  
+A demonstration of the IaaS, PaaS and Data Management components is planned with ATOS that will be tailored to their requirements.  
+T-Systems has invested in developing its own testbed where INDIGO software components have been installed. In addition, they are producing internal marketing documentation describing INDIGO capabilities. A specific working group involving INDIGO and T-systems experts is being setup in order to appropriately configure the INDIGO services into the T-systems testbed and provide demonstrators of the INDIGO components added value.  
+2.4 Exploitation and Key Performance Indicators
+Key Performance Indicators (KPIs), associated with the various areas addressed by INDIGO, were included in the Grant Agreement. They cover many of the points related to a successful exploitation, but are difficult to estimate without a detailed knowledge of the status of the exploitation of individual solutions, both from the providers and the research communities’ perspective. 
+To improve the monitoring of these global KPIs, we have linked them with the success metrics for the different case studies, in relation to the corresponding communities, and we provide a summary at the end of the corresponding section below.
+  
+3  EXPLOITATION OF INDIGO-DATACLOUD SOLUTIONS IN A EUROPEAN OPEN SCIENCE CLOUD ECOSYSTEM
+
+The final vision of the European Open Science Cloud is yet to be confirmed, and it is not the aim of our task T2.5 to discuss it. On the other hand, we need a basic model for our exploitation, so we will use one in this the deliverable and refer to it as “EU-OSC”, to indicate that this is only a tool model. 
+Despite the word “Cloud” in its title, EU-OSC refers to a complex ecosystem of services mainly related to e-infrastructures, useful for research communities, and in particular to their integration, but not all of them based on “cloud computing” resources. 
+However, as INDIGO-DataCloud is oriented to “cloud computing”, for our exploitation it is convenient to use a model based on the basic cloud services architecture, with three levels well identified by the industry: IaaS (infrastructure as a service), PaaS (platform as a service) and SaaS (software as a service). 
+Some important comments before introducing this model and discussing it:
+-As defined from the start of the project and more clearly in the presentation and analysis of the different Case Studies, we need to identify and define actors and their roles. Of course this is even more important when considering future exploitation. The experience4 gained with the cloud framework along these months indicates that we need to expand the roles, and we have tried to accommodate them with professional profiles closer to the different services. In this way we can also propose new niches for the potential participation of external companies, and in particular SMEs.
+-Along the first INDIGO review it was strongly recommended that the gap/expertise for new communities, or research users in general, to adopt and integrate INDIGO solutions when building their applications, should be reduced, in particular profiting of general templates that could be re-used in an easy way. The model proposed also goes in this direction, proposing these templates “instantiable” by linking the general scheme of use of INDIGO solutions (Common, Automated, Data and Datacenter/User oriented) with the additional required e-infrastructure components, starting with the resource providers. All this work has been developed in the last months in agreement with WP3 and JRA (WP4, WP5, WP6) teams.
+-The integration of existing services is a very important and relevant point for many research communities. These services may or not benefit of a potential migration to a Cloud-based platform, so we have included in the model the possibility to integrate or access “legacy” services, using this word with a positive meaning. In some cases, there is the need for a wrapper or bridge to integrate them, and we think it is a good idea to consider them from the start in the model proposed.  They are generically, and not very adequately, labelled under the “Software” tag in the scheme shown below.
+-Last but not least, within task T2.2 we have been discussing in detail the important point of the integration of Data Management related services. Deliverable D2.7 on data ingestion, due in two months after this one, describes how those services match INDIGO solutions and fit into this architecture. Given their importance and particular characteristics we may have to include also a DMaaS (Data Management as a Service) layer in the future.
+
+3.1 A basic model to prepare exploitation: EU-OSC
+We assume some hypothesis for the EU-OSC model:
+Based on services, with an inclusive rather than exclusive approach
+Promoting competition but assuring that base line requirements are covered
+Identifying needs and estimating resources from (but see further analysis later):
+Research Communities
+“Large” / well organized ones, like those associated to EIROs and ESFRIs
+EU Flagships
+Large communities and/or research centers
+The long tail of research.
+Innovation teams
+R&D& I towards companies, in particular SMES (in many cases collaborating with previous communities)
+New ideas, pilots, tests, etc.
+Integrating services at all levels, from networking to visualization,  and also considering education, training, and dissemination.
+Sustained by public funding:
+Regional/National existing/new projects and infrastructure
+Digital Agenda funds
+New H2020 projects, structural funds, or other projects (like for example IPCEI)
+At the e-IRG an approach based on the Commons is proposed for this ecosystem, identifying three core functions:
+Strategy (+ Coordination + Community Building)
+Provision of Services (Public and Commercial)
+Innovation
+Among the current initiatives at EU level implied in the provisioning of services we can consider: 
+GEANT: on networking, common AA services, aggregation of Cloud providers, etc.
+EGI.eu: HTC (mainly based on Grid), Cloud (FedCloud, EGI DataHub)
+PRACE: Access to Supercomputers
+EUDAT: (Big) Data management, storage and archiving.
+OpenAIRE + THOR: Open Access to information and data, and related protocols and tools, including the use of DOIs, PIDs and ORCID.
+INDIGO-DataCloud, as provider of solutions towards the Cloud world.
+We assume a EU-OSC model inspired by the “Cloud technology”, and use a “layered” structure for the scheme of services: IaaS (Infrastructure as a Service), PaaS (Platform as a Service) and SaaS (Software as a Service). A clear advantage of this layered structure is that most of the communication/interaction within a Case Study solution can be organized following it: a SaaS solution uses the PaaS tools/services, that in turn provide the required combination of IaaS services. INDIGO middleware focus mainly in the provision of the PaaS platform to support the SaaS solutions for each research community, and exploiting the resources of different IaaS providers.
+Along this line, an important concept in the EU-OSC model are the roles of the actors in these structure, and we propose the following basic categories:
+Service Providers (including also “aggregators”), for example 
+Enablers (knowing how to exploit the services, including if needed extra services/tools)
+Solvers (providing the solutions closer to the final user, integrating “specific” knowledge)
+Users/Customers (directly or indirectly, i.e. reselling, exploiting the solutions in the Cloud).
+The corresponding software components, at all levels, that are instantiated in the different resources are of course a relevant part of the ecosystem services, and must not be forgotten in this scheme. 
+The figure below shows an example of how a Service Oriented Architecture, like the one proposed for adoption in the LifeWatch ESFRI, can be matched to this scheme.  
+
+
+Figure 2: Example of adaptation of a SOA scheme to the Cloud layers
+
+Now, continuing this analysis, we need to identify, within the previous list of EU initiatives, their potential roles:
+
+Table 1 Example of potential roles in the EU-OSC ecosystem for different EU e-Infrastructures
+Of course this may seem a very naive EU-OSC model, but it can be useful to prepare an analysis of direct stakeholders for exploitation, in particular the required service providers, and the enablers and solvers that we should target for exploitation of INDIGO solutions. 
+The variety of Case Studies from different research communities will allow us however to explore the usefulness and initial validity of this approach. 
+3.1.1 Example: using the EU-OSC ecosystem of services model to identify roles and relevant stakeholders in a Case Study in LifeWatch
+As a first example, figure 3 below shows the analysis made by the Champion of the current status for the P0 (Algae Bloom) Case Study. Note that it identifies enablers and providers connected to the services that he, as a solver, requires to build and run the application.
+
+
+ 
+Figure 3: Analysis of a Case Study (AlgaeBloom) in terms of a layered Cloud scheme
+
+For a future exploitation, we know that EGI FedCloud will play the role of IaaS provider, via FedCloud (even if aggregating LifeWatch own resources at different data centres) and so we should assure that EGI FedCloud supports INDIGO solutions. But we also foresee that the enabler and solver roles will be assumed by the LifeWatch initiative participants, and also by some of external companies for specific new applications. So we should consider how to reach this community to promote INDIGO solutions, and even consider an explicit agreement, or the participation of LifeWatch in an Open Consortium or Forum oriented to assure the sustainability of INDIGO solutions.
+3.1.2 Some remarks on a Cloud based model for SaaS solutions
+The model proposes a clear transition towards what the industry would call SaaS solutions, that can be considered very close to the current developments for Virtual Research Environments. However, the SaaS model, as other solutions in the Cloud, implies some extra questions:
+-The need for a reconsideration of different security measures, in particular the analysis of the platform deployed where the application executes, and also the control of potential zombie processes.
+-The evolution in functions for IT personnel in the organizations, and the potential role conflicts.
+-How to assure the performance of intensive computing/data applications, one of INDIGO aims.  
+3.2 Opportunities in new initiatives 
+Since the start of the preparation of this deliverable, the situation regarding the preparation of the e-infrastructure support for the EOSC has changed: under the EINFRA125 call, and a key element for this support, a new proposal jointly supported by EGI.eu, EUDAT and INDIGO, has emerged. 
+The scheme to support the research communities is sketched in the figure below, that was presented in the EINFRA12- proposers day in Amsterdam (19 Jan 2017).
+
+
+
+Figure 4: proposed scheme for approach towards research communities in EINFRA12 proposal
+
+The recent EGI/EUDAT/INDIGO internal calls for Thematic Services and for Competence Centers on one hand have been pursued by the Research Communities in INDIGO, and on the other hand will provide to INDIGO a new bunch of initiatives interested in exploiting INDIGO solutions. As soon as the results of these calls are known, this information will be used to get in contact and establish the corresponding exploitation plans for next three years (2018-2020). The EINFRA-12 proposal is therefore a very important opportunity to promote the INDIGO products and turn them into real services for the benefit of many user communities. It will offer a natural continuation of the INDIGO-DataCloud exploitation activities beyond the end of the project.
+
+
+3.3 Integrating INDIGO solutions for easier exploitation
+Following the first INDIGO review, the consortium received clear recommendations about the need to provide an easier way to build final user applications using INDIGO solutions:
+“Relevant use cases involving different communities have been presented. The pertinence of the choice of the use cases has been properly supported. The packages and building blocks are spread among those but it is missing a "pilot" instance (like an ideal lab) where all those elements can be seen working together…
+The greatest technological achievement is the variety of open-source tools and other software components, some state-of-the-art, which were developed or enhanced throughout the reviewed period. There is no doubt that these tools will be beneficial for a wide range of research activities, as demonstrated by the presented use-cases, however the use-case solutions were tailored by the INDIGO teams to fulfil very specific requirements. There is a great amount of effort still required to integrate the various tools into a specific solution or use-case and therefore a concern that INDIGO tools could suffer from limited usage after the project completion, is expressed. Therefore, a generic cloud platform that leverages the INDIGO components needs to be built, demonstrated and documented, to allow other implementers an easier path for leveraging the project deliverables…
+The reviewers acknowledge the high ambition of the project in addressing all the presented use cases and the challenge it represents. There is a risk of a potential mismatch between the high-level requirements (WP2) and the specification and implementation of the software components (WP4,5,6). Whereas the requirements are very generic, the implementation in use cases is very specific and individually targeted to the application scenarios. How can these use cases be taken as reference models to be deployed in other scenarios?”
+ All these remarks are very pertinent, and in fact the consortium was already exploring the possibility of a “generic solution”, that can be tailored to the needs of different communities. However, the variety of different use cases, and of “direct users of INDIGO solutions”, in some cases system managers or IT experts, in other cases researchers with a varying degree of ICT background, makes it difficult to provide a unique solution. In what follows we present the ideas to address these recommendations. 
+3.3.1 A layered scheme to build SaaS applications using INDIGO solutions.
+The following figure expands the previous description of an application built using a service oriented architecture in the Cloud, using INDIGO solutions. It is one of the options discussed within the JRA work. 
+
+Figure 5: Actors and components for a SaaS solution in a Cloud-based model
+
+3.3.2 Templates for external communities
+At review time, the two following templates were presented as examples that could be re-used by external communities.
+
+
+
+Figure 6: Generic templates based on INDIGO solutions that can be adapted to different requirements
+
+These templates clearly show also the roles of different actors, and IaaS, PaaS, SaaS components, however they still seem fairly complex.
+
+3.3.3 Simplifying the architectural view of INDIGO use
+Along the last “INDIGO All Hands Meeting” in Lisbon (6-9th Feb 2017), the discussion was oriented towards a further simplification from the architectural point of view, and three different basic schemes from the point of view of the user access were proposed, that are summarized in the following table
+
+
+
+
+
+Figure 7: Simplified Generic user access to Cloud resources using INDIGO solutions.
+
+This analysis of a generic showcase evolving from the three previous approaches will converge in the preparation of a first implementation to be demonstrated at the INDIGO SUMMIT in May. This effort will be also exploited while preparing an adequate training material, and also to approach new applications and communities, one of the main objectives for the SUMMIT.  
+4 ANALYSIS OF EXPLOITATION FOR THE CASE STUDIES
+Having in mind the information presented in the previous sections, we can now make a detailed analysis of the exploitation possibilities for the applications proposed in the Case Studies promoted by each Research Community, that will in turn impact on the exploitation of INDIGO solutions: if a research community adopts INDIGO solutions, it is also more likely that INDIGO solutions will be considered to support other many applications from the same community in the Cloud environment. 
+The table describing the metrics to be used, that was already presented in Deliverable D2.3, is included below. It was agreed by the corresponding research communities, and reviewed in detail at the AHM meeting in Lisbon, to provide the initial input case per case that can be found in the Appendix.
+The table is divided into four sections:
+-VALUE: describes why the Case Study is expected to be relevant and why the integration of INDIGO solutions provided added value
+-IMPLEMENTATION: considers the different points in the application lifecycle that assure its correct integration and deployment, including the election of infrastructure providers.
+-USER ADOPTION: measures the factors impacting on the popularity of the use case
+-IMPACT: concludes the analysis at a wider scope.
+These metrics imply an additional interaction of the champions and seniors participating in INDIGO with their research communities, and in some cases the metric proposed implies that the user experience is positive using a simple metric6 for the answers/evaluations. 
+The most relevant entries in this table have been checked in detail on a per-use case basis.
+
+Table 1: Proposed success metrics for case studies using INDIGO solutions. Specific information for each case study will be provided in columns 3 (Description), 5 (Indicators) and 7 (Issues)  
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+
+Relevance as defined by experts
+Agreed by experts
+(at least 3 names and statements)
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+
+Comparison with previous solution and/or with competitor
+Better! describe new features, increase in performance, usability, etc.
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+
+Virtual Access to HPC / GPU;
+Elastic Cloud;
+Use of Future Gateway / 
+Mobile Kit
+And others.
+# INDIGO components/ solutions useful; link to new features, increase in performance, etc. 
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+
+List of popular software integrated
+Integration was successful for popular software
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements
+
+Requirements Satisfied 
+
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not satisfied
+
+Integration in testbed
+
+Date, logs, demos
+Provided after integration
+-
+Integration is not completed
+
+Test and Validation
+
+Date, tests results, see D2.8
+Evidence will be agreed with WP3
+-
+Test and Validation not completed
+
+Deployed in production
+
+Access Link to production;
+#production sites
+Provided after entering in production
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback13
+ Score>8
+
+
+
+Popularity
+
+#Users
+>5
+
+
+
+Reliability
+
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+
+Feedback13
+ Score>8
+
+
+
+Support
+
+Helpdesk, documentation, training, in place
+Yes to all
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Case
+#publications
+#contributions in conferences
+Specific per Case Study
+Knowledge Impact
+Time to publish
+Acceptance criteria
+
+Adoption by Research Community
+
+Agreement;
+Support; 
+#Users
+Specific per Case Study
+
+Accessibility
+Governance 
+Resources
+
+Sustainability
+
+External Funding
+Specific per Case Study
+
+
+
+Dissemination 
+
+# Events; Stakeholders contacted
+Specific per Case Study
+
+Visibility
+
+
+Interest for External Communities
+
+List of external communities
+Specific per Case Study
+
+Usability
+
+As stated before, the initial detailed templates completed can be found on Appendix 1.
+Based on the initial input to these templates, different sections (marked in green) in the global KPI table can now be completed with a higher level of confidence, and corrective actions taken as needed.
+Area
+Impact Description
+KPI and Values (minimum/ideal/maximum)
+Indicators
+Accessibility
+Increased access and usage of e-Infrastructures by scientific communities, simplifying the “embracing” of e-Science.
+Number of ESFRI communities that have adopted INDIGO solutions by the end of the project: 5/8/10
+6      LIFEWATCH, CTA
+INSTRUCT, EMSO
+DARIAH, ELIXIR
+
+
+Number of production sites supporting the software releases by the end of the project 20/50/80
+
+Availability
+Availability of an open framework with mid/long term sustainability (also avoiding lock-in to particular hardware or software platforms in
+the development of science).
+Number of marketplaces where providers making use of project results are advertised: 2/3/5
+
+
+
+Number of Open Source projects contributed by the project developments: 5/8/10
+
+Usability
+Use of virtualized GPU or
+interconnection (containers).
+Implementation of elastic
+scheduling on IaaS platforms. More direct access to state-of-the art resources, reduction of the
+learning curve. It should include analysis platforms like R-Studio, PROOF, and Octave/Mathlab,
+Mathematica, or Web/Portal
+workflows like Galaxy.
+Number of production sites running INDIGO-based solutions to provide virtual access to GPUs or low latency interconnections 10/25/40
+
+
+
+Number of production sites providing support for Cloud elastic scheduling 6/9/12
+
+
+
+Number of popular applications used by the user communities directly integrated with the project products: 6/10/12
+11 Galaxy, R-Studio, Jupyter, Delft-3D, Matlab, Geoserver, Caffee, ROOT, OPHIDIA, AMBERTOOLS, EUBIOSTEO
+
+
+Number of research communities using the developed Science Gateway and Mobile Apps: 7/10/12
+7 ENES, Eurobioimaging, Molecular Dynamics, Galaxy, LifeWatch, Dariah
+
+
+Research Communities external to INDIGO using the software products: 3/5/7
+3 ICOS, EPOS, HBP evaluating OneData
+European
+technology
+leadership
+Strengthening the competitiveness and growth of companies by developing innovations meeting the needs of European and global markets; and, where relevant, by delivering such innovations to the markets.
+Number of business cases elaborated: 3/5/7
+
+
+
+Number of open source components made available: 15/20/25
+
+Impact on
+Policy
+Policy impact depends on the successful generation and dissemination of relevant knowledge that can be used for policy formulation at the EU or
+national level.
+Number of contribution to standards coming from INDIGO developments: 3/5/7
+
+
+
+Number of contributions to roadmaps, discussion papers: 8/10/12
+
+Visibility
+Visibility of the project among scientists, technology providers and
+resource managers at high level.
+Number of press releases issued: 4/6/8
+
+
+
+Number of downloads of material from website per year: 1000/1500/2000
+
+
+
+Number of download of software from repository per year: 500/700/900
+
+
+
+Number of events attended: 20/30/40
+
+
+
+Number of domain exhibitions attended: 10/15/20
+
+
+
+Number of communities and stakeholders contacted: 100
+
+Knowledge
+Impact
+The impact on knowledge creation and dissemination generated in the project depends on a high level of
+activity in dissemination to the proper groups.
+Number of journal publications: 2/3/4
+
+
+
+
+Number of conference papers and presentations: 20/30/40
+
+
+
+APPENDIX: CASE STUDIES SUCCESS METRICS 
+
+The current templates from the different Case Studies are included below:
+
+P0 ALGAE BLOOM
+
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Deployment of a number of simulations for Hydrodynamics and Water Quality modelling in high resolution.
+
+Provide a user-friendly environment to forecast the hydrodynamics and water quality status of water mass. In particular, the goal of the case study is to predict potential problems of eutrophication in reservoirs or lakes.
+
+Each model needs about 20GB of storage space to work with (for input and output), so that, it needs not only computing support but also storage.
+
+An AAI system is needed to access the services.
+Relevance as defined by experts
+Agreed by experts:
+
+Agustín Monteoliva
+
+Tamara Santiago
+
+Jose Augusto Monteoliva
+-
+Presented at DELFT days
+Invited to PICO @ EGU
+
+Advance over state-of-the-art
+This brand-new service launches a number of simulations configured by a user through a user-friendly interface, where users are able to edit the parameters to sweep.
+
+The access to the resources is transparent for the user and everything is integrated using the same AAI solution.
+
+Both input and output files are stored in OneData
+Comparison with previous solution and/or with competitor
+Better
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+The integration of INDIGO solutions allows the user to exploit computing and storage resources in a transparent, dynamic and scalable way. The user does not need to handle the data locally and do not need to deploy the software in self-resources. 
+Furthermore, a number of models can be simulated with an easy configuration form, so that, no manual edition in the models is needed.
+Dynamic deployment of resources
+
+Distributed storage system (direct access for both final user and computing resources)
+
+Future Gateway as user-friendly configuration GUI
+# INDIGO
+
+PaaS Orchestrator
+INDIGO IAM
+OneData
+FutureGateway
+TOSCA
+Mesos
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+Yes
+Delft3D
+Integration successful (Y)
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements appear
+
+Requirements Satisfied 
+
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied (potential issue)
+
+Integration in testbed
+Demo presented at Review (November 2016)
+Tested at Testbed Environment at November 2016.
+By M19
+
+Temporary access to user endpoint: https://fgw01.ncg.ingrid.pt/lifewatch-test
+-
+
+
+Test and Validation
+
+Date, tests results, see D2.8
+Evidence will be agreed with WP3
+-
+
+
+Deployed in production
+
+Access Link to production;
+#production sites
+Provided after entering in production
+Accessibility
+
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+ 
+Feedback13
+ Score>8
+
+Agustín Monteoliva,
+Tamara Santiago,
+Daniel García,
+Jose Augusto Monteoliva,
+Fernando Aguilar
+
+
+Popularity
+
+#Users
+>5
+
+Additional requirements appear
+
+Reliability
+Sources: internal,
+ E-INFRA, INDIGO
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+FGW GUI for configuring models
+Feedback13
+ Score>8
+
+
+
+Support
+
+Helpdesk, documentation, training, in place
+Yes to all
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+#publications
+
+
+
+#contributions in conferences
+1
+
+
+
+3
+Knowledge Impact
+RDA Plenaries (8th, 9th), 
+
+Delft3D Days
+
+EGU 2017
+
+Time to publish
+Acceptance
+
+Adoption by Research Community
+
+Agreement;
+Support; 
+#Users
+Specific per Case Study
+
+Accessibility
+Gobernance 
+Resources
+
+Sustainability
+
+External Funding
+>3
+
+Confederación Hidrográfica del Duero
+Ecohydros SL
+
+IH
+
+
+
+Dissemination 
+
+# Events;
+
+
+Stakeholders contacted
+>3
+
+Confederación Hidrográfica del Duero
+Ecohydros SL
+IH
+Delft3D Users Community
+Visibility
+Delf3D Days
+RDA Plenaries
+EGU 2017
+
+Interest for External Communities
+
+List of external communities
+European Geoscience Union, Delft3D User Community, Research Data Alliance
+Usability
+
+
+
+
+P1 EURO BIOIMAGING
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Explained in D2.1
+Relevance as defined by experts
+Agreed by experts:
+
+Dr. Luis Martí-Bonmatí
+Dr. Angel Alberich-Bayarri
+-
+The metric will evaluate the suitability of the use case for being used as a demonstrator and of the relevance of the requirements. Currently we have 2 experts defining the use case, to be increased before the end of the project.
+
+Advance over state-of-the-art
+By using cloud backends we increase capacity, but the main advantage is the capability of deploying the infrastructure on demand (zero-dev ops).
+Comparison with previous solution and/or with competitor
+Better
+ 
+-
+
+
+INDIGO Added Value
+As described above, the capability of deploying complete infrastructures and remotely mounting data storages.
+Virtual Access to HPC / GPU;
+Elastic Cloud;
+Use of Future Gateway / Mobile Kit
+# INDIGO solutions useful
+
+OneData, TOSCA Orchestrator, CLUES, IAM.
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+See D2.1
+Confirmed in D2.9
+-
+Initial Case Study is evolved
+
+Integrates popular software
+Yes
+Caffe, octave and all the software dependencies where successfully integrated in the installation recipe. We used standard repositories of general-purpose software.
+Integration successful (Y)
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+Confirmed by M26 in D2.9
+-
+Additional requirements appear, but no for the moment
+
+
+Requirements Satisfied 
+
+See D2.10
+Confirmed for 1st and 2nd release
+Confronted 
+-
+A critical requirement is not fully satisfied
+
+Integration in testbed
+
+Date, logs
+By M18, By M24
+-
+Early prototype in M18, usable system by PM24.
+
+Test and Validation
+
+Date, tests
+See D2.8
+Agreed with WP3
+-
+Include a set of unitary tests and performance benchmarks.
+
+Deployed in production
+
+Access Link;
+#production sites
+Provided after entering in production
+Accessibility
+By PM24
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+Opinion of >5 Qualified Users
+
+ Score>8
+
+By PM24.
+
+Popularity
+
+#users
+>10
+
+By PM24
+
+Reliability
+Sources: internal, e-infra, INDIGO
+Ratio of success;
+Availability
+>80%;
+>95%
+
+By PM24
+
+Friendliness
+Opinion of >5 Qualified Users
+
+ Score>8
+
+By PM24
+
+Support
+Helpdesk, Documentation, Training
+Levels of support
+Yes to all
+
+By PM24
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+
+
+
+
+
+
+Adoption by Research Community
+In direct relation to this Use Case
+#publications in journals;
+#contributions in conferences
+1
+
+2
+Knowledge Impact
+
+
+Sustainability
+
+Agreement;
+Support;
+#users
+
+Accessibility
+Governance 
+Resources
+
+Dissemination 
+Github forks, agreements, adoption by other projects, etc.
+
+
+
+
+
+Interest for External Communities
+
+#events;
+Stakeholders contacted
+=> 4
+Visibility
+
+P2: MOLECULAR DYNAMICS
+
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Compute and analysis of MD simulations using clouds
+Relevance as defined by experts
+Agreed by experts
+(at least 3 names and statements)
+-
+Community feedback unclear/late
+
+Advance over state-of-the-art
+Avoid the need to move large trajectories
+Comparison with previous solution and/or with competitor
+Better: Previous solution based on local user management solution
+Cloud submission was not  possible
+-
+
+
+INDIGO Added Value
+Distributed storage solution and cloud access with the same credentials
+Use of tools
+# INDIGO solutions useful
+
+IAM
+Future Gateway
+OneData
+Usability
+Other AAI mechanisms used in the broad life sciences community
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+
+
+Integrates popular software
+AmberTools
+List of popular software integrated
+Integration successful
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+Confirmed by M26 in D2.9
+-
+Additional requirements appear
+
+Requirements Satisfied 
+
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied
+
+
+Integration in testbed
+IAM in production portal
+Date, demos
+IAM: October 2016
+-
+
+
+Test and Validation
+To be planned with WP3
+Date, tests results, see D2.8
+Evidence will be agreed with WP3
+-
+Test and Validation not completed
+
+Deployed in production
+IAM in production portal
+Access Link to production;
+#production sites
+Provided after entering in production
+Accessibility
+http://py-enmr.cerm.unifi.it/access/index/amps-nmr
+
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback
+ Score>8
+
+
+
+Popularity
+
+#users
+>5
+
+
+
+Reliability
+
+Ratio of success;
+Availability
+>80%;
+>95%
+
+
+
+Friendliness
+
+Feedback
+ Score>8
+
+
+
+Support
+Helpdesk, Documentation, Training
+Levels of support
+Yes to all
+Current material needs to be updated
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+Knowledge creation
+In direct relation to this Use Case
+#publications in journals;
+#contributions in conferences
+1
+
+
+2
+Knowledge Impact
+
+Adoption by Research Community
+Adoption by Research Community
+
+Agreement;
+Support;
+#users
+Specific per Case Study
+Accessibility
+
+Sustainability
+Sustainability
+
+External Funding The H2020 e-Infrastructure projects West-Life (grant no. 675858), EGI-Engage-MobrainCC (grant no. 654142)
+Specific per Case Study
+
+
+Dissemination 
+Dissemination 
+
+# Events;
+Stakeholders contacted
+See #contributions in conferences above
+
+#online tutorials
+Visibility
+
+Interest for External Communities
+Interest for External Communities
+
+List of external communities
+Structural Biology community worldwide – INSTRUCT ESFRI community at European level
+
+Usability
+
+
+P3a LBT
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Developing an integrated infrastructure to manage the LBT astronomical distributed archive in terms of efficient data transfer,
+storage, data preservation and user space.
+Relevance as defined by experts
+Agreed by experts
+(at least 3 names and statements)
+-
+
+
+Advance over state-of-the-art
+Nowadays no astronomical distributed archive exists.
+Comparison with previous solution and/or with competitor
+Better
+Nowadays, all services related to an astronomical archive (e.g. archive data query, data reduction, workflows, observing proposals, etc.) are completely independent and uncorrelated. INDIGO will provide uniform and consistent solutions for these services.
+
+-
+
+
+INDIGO Added Value
+INDIGO solutions are well responding to data access and data computation requirements, matching the data distribution targets. 
+
+Virtual Access to HPC / GPU;
+Elastic Cloud;
+Use of Future Gateway / 
+Mobile Kit
+And others.
+OneData
+Ophidia
+IAM
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+The main topic of this use case is using INDIGO solutions in terms of efficient data transfer and storage, data preservation and user space for data reduction and computing, applied to the LBT astronomical distributed archive.
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+No
+List of popular software integrated
+
+Usability
+
+
+Requirements Detailed
+A master archive (full archive for all partners and all data); distributed sites (partial archives with proprietary data, data reduction with proprietary pipeline); user space composed by storage, high performance computing, collaborative tools.
+See D2.4
+To be confirmed by M26 in D2.9
+-
+
+
+Requirements Satisfied 
+Data distribution on different sites, user space storage
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release
+-
+
+
+Integration in testbed
+
+Date, logs, demos
+OneData: Sep 2016
+Ophidia: Feb 2017
+-
+IAM not yet integrated (estimated integration within Apr 2017)
+
+Test and Validation
+
+Date, tests results, see D2.8
+
+-
+Test and Validation not completed
+
+Deployed in production
+The deployment in production is estimated after the 2nd release
+Access Link to production;
+#production sites
+Provided after entering in production
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback13
+ Score>8
+
+
+
+Popularity
+
+#Users
+>10
+
+
+
+Reliability
+
+Ratio of success
+Availability
+>80%
+>95%
+
+
+
+Friendliness
+
+Feedback13
+ Score>8
+
+
+
+Support
+
+Helpdesk, documentation, training, in place
+Yes to all
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+#publications
+#contributions in conferences
+“Large Binocular Telescope: INDIGO Solutions for an Astronomical
+Distributed Archive” proceedings of ADASS XXVI conference in press at Astronomical Society of the Pacific
+Knowledge Impact
+
+
+Adoption by Research Community
+
+Agreement;
+Support; 
+#Users
+
+Accessibility
+
+
+Sustainability
+
+External Funding
+LBT collaboration
+INAF projects
+
+
+
+Dissemination 
+
+# Events;
+Stakeholders contacted
+1) “INDIGO-DataCloud Infrastructure Applied to
+Large Binocular Telescope Distributed Archive” presented at DI4R Sep 2016
+
+2) “Large Binocular Telescope: INDIGO Solutions for an Astronomical
+Distributed Archive” presented at  ADASS XXVI Oct 2016
+
+Visibility
+
+
+Interest for External Communities
+
+List of external communities
+Other astronomical archive communities (e.g. radio-astronomy, etc.)
+Usability
+
+
+Case Study P3b: Archive System for the Cherenkov Telescope Array (CTA)
+
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Deployment of a first prototype of a Distributed Archive System for the Cherenkov Telescope Array
+Relevance as defined by experts
+Agreed by experts
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+Currently, a single huge data center is not feasible for the amount of data expected for CTA and it is not  easy to manage and maintain.
+Comparison with previous solution and/or with competitor
+Better
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+INDIGO-OneData services offers solution for a distributed federated archive and takes care of redundancy policy of data and metadata also allowing an efficient data-model scheduling organization.
+Virtual Access to HPC / GPU;
+Elastic Cloud;
+Use of Future Gateway / 
+Mobile Kit
+And others.
+# INDIGO components/ solutions useful; link to new features, increase in performance, etc. 
+INDIGO-OneData
+INDIGO-IAM
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+Integrated N1QL for metadata query
+List of popular software integrated
+Integration was successful for popular software
+Usability
+
+
+Requirements Detailed
+Main requirements regard: efficient big-data management, distributed data and storage, 
+data handling and retrieval, secure access, interoperability with existing testing
+and production infrastructure.
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements appear (potentially)
+
+Requirements Satisfied 
+Employing OneData solutions for developing a distributed system deployed as a federation of different storage entities.
+See D2.9, D2.10, check on 1st and 2nd release
+Easily handle and manage huge amount of data
+Effective long-term storage
+Distributed storage
+End User Data Retrieval: customized queries
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied
+(potentially)
+
+Integration in testbed
+Integration in INDIGO testbed and testing with INDIGO 1st release has been performed in M19
+Date, logs, demos
+Provided after integration
+-
+Integration is not completed
+
+Test and Validation
+Testing are on-going regarding the metadata queries for data retrival
+Date, tests results, see D2.8
+Evidence will be agreed with WP3
+-
+Test and Validation not completed
+
+Deployed in production
+A first CTA/INAF testbed infrastructure of the CTA Distributed Archive using the INDIGO-OneData services will be deployed in production (May/June 2017) once the 2nd version of INDIGO services will be released  
+Access Link to production;
+#production sites
+Provided after entering in production
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+Actually 5 users are testing the use case reporting issues and additional enhancements: 
+Eva Sciacca, Stefano Gallozzi, Alessandro Costa, Angelo Antonelli, Michele Mastropietro,Francesco Visconti, Fabrizio Lucarelli and Saverio Lombardi
+Feedback13
+ Score>8
+
+
+
+Popularity
+More users are expected once the CTA Archive prototype will be deployed in production
+#Users
+>5
+
+
+
+Reliability
+
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+
+Feedback13
+ Score>8
+
+
+
+Support
+
+Helpdesk, documentation, training, in place
+Yes to all
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+#publications
+#contributions in conferences
+Specific per Case Study
+1 publication in preparation
+4 contributions
+2 contribution + 1 poster at CTA Meetings
+Knowledge Impact
+Time to publish
+Acceptance criteria
+
+Adoption by Research Community
+
+Agreement;
+Support; 
+#Users
+Specific per Case Study
+
+Accessibility
+Governance 
+Resources
+
+Sustainability
+
+External Funding
+Specific per Case Study
+-CTA project
+-RDA
+-Italian projects (e.g. PRIN)
+-H2020 projects
+
+
+
+Dissemination 
+
+# Events;
+Stakeholders contacted
+Specific per Case Study
+- CTA Meetings
+- IWSG
+- DI4R
+-ASTERICS/OBELICS meeting
+- INAF ICT
+- e-Research Summer Hackfest
+
+Visibility
+
+
+Interest for External Communities
+
+List of external communities
+
+Usability
+
+
+
+P4 HADDOCK, DISVIS, POWERFIT
+P4a HADDOCK WEB PORTAL
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+A local, self-contained version of HADDOCK in a VM: An information-driven flexible docking approach for the modeling of biomolecular complexes.
+Relevance as defined by experts
+Agreed by experts
+(at least 3 names and statements)
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+Allows access to virtual cluster resources to users who do not have local resources
+Comparison with previous solution and/or with competitor
+Better!
+Describe new features, increase in performance, usability, etc.
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+-End-users do not have to deal with technical details about software installation
+-Easy configuration of VMs is provided to admins
+
+-Virtual Access to HPC
+-Elastic Cloud 
+.
+# INDIGO components/ solutions useful; link to new features, increase in performance, etc. 
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+HADDOCK
+List of popular software integrated
+Integration was successful for popular software
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements appear
+
+Requirements Satisfied 
+
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied
+
+Integration in testbed
+EC3: http://servproject.i3m.upv.es/ec3/
+Date, logs, demos
+EC3: Jan’16
+https://project.indigo-datacloud.eu/projects/wp2/wiki/P4-Integration-Status
+Tested on EGI FedCloud (INFN)
+
+Provided after integration
+-
+Integration is not completed
+
+Test and Validation
+
+Date, tests results, see D2.8
+Evidence will be agreed with WP3
+-
+Test and Validation not completed
+
+Deployed in production
+
+#production sites
+Provided after entering in production
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback13
+ Score>8
+
+
+
+Popularity
+
+#Users
+
+
+
+
+Reliability
+
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+
+Feedback13
+ Score>8
+
+
+
+Support
+
+Helpdesk, documentation, training, in place
+Yes to all
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+#publications
+#contributions in conferences
+3 contributions (poster) 
+Knowledge Impact
+Time to publish
+Acceptance criteria
+
+Adoption by Research Community
+
+Agreement;
+Support; 
+#Users
+Specific per Case Study
+
+Accessibility
+Governance 
+Resources
+
+Sustainability
+
+External Funding 
+Specific per Case Study
+
+
+
+Dissemination 
+
+# Events;
+Stakeholders contacted
+Specific per Case Study
+
+Visibility
+
+
+Interest for External Communities
+
+List of external communities
+Specific per Case Study
+
+Usability
+
+
+
+
+P4b DISVIS WEB PORTAL
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+DisVis
+
+Relevance as defined by experts
+ Agreed by experts
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+Harnessing power of GPGPUs in HTC resources (grid) 
+
+Comparison with previous solution and/or with competitor
+There was not previous solution. Within INDIGO we pioneered the use of GPGPU-enabled grid resources
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+User-friendly web portal providing access to GPGPU resources by making use of docker container together with the INDIGO udocker solution on the grid site
+Number of submissions to the web portal
+
+
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as % 
+ 
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+DisVis
+https://github.com/haddocking/disvis 
+List of popular software integrated
+Integration was successful for popular software
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements appear
+
+Requirements Satisfied 
+Web portal is in production
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied
+
+Integration in testbed
+DisVis web portal using the INDIGO udocker solution 
+
+In production on the EGI grid infrastructure
+http://milou.science.uu.nl/enmr/services/DISVIS
+Portal in production mode
+-
+Integration is not completed
+
+Test and Validation
+External users to the project are using the portal
+
+INDIGO docker containers users
+Number of external users
+
+
+
+
+
+Number of docker container downloads from the INDIGO repo
+
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as %
+
+Number of disvis container downloads from the INDIGO repo
+
+-
+Test and Validation not completed
+
+Deployed in production
+DisVis Web Portal
+
+External users to the project are using the portal
+
+Access Link to production:
+http://milou.science.uu.nl/enmr/services/DISVIS/ 
+
+
+
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback13
+ Score>8
+
+
+
+Popularity
+
+#Users
+
+
+
+
+
+
+#Submissions
+Sustained or increased registration rate compared to previous period (last 6 months) – expressed as %
+
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as %
+
+
+
+Reliability
+
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+
+Feedback13
+ Score>8
+
+
+
+Support
+
+Helpdesk, documentation, training, in place
+Yes to all:
+Documentation:
+http://milou.science.uu.nl/cgi/enmr/services/DISVIS/disvis/help
+Example run:
+http://milou.science.uu.nl/cgi/enmr/services/DISVIS/disvis/example
+Support forum:
+http://ask.bioexcel.eu/c/disvis
+Online tutorial:
+In the making
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+#publications
+
+#contributions in conferences
+Specific per Case Study 
+1 publication
+
+5 contributions
+Knowledge Impact
+Time to publish
+Acceptance criteria
+
+Adoption by Research Community
+
+Agreement;
+Support; 
+#Users
+Specific per Case Study
+
+Accessibility
+Governance 
+Resources
+
+Sustainability
+
+External Funding The H2020 e-Infrastructure projects West-Life (grant no. 675858), EGI-Engage-MobrainCC (grant no. 654142)
+Specific per Case Study
+
+
+
+Dissemination 
+
+# Events;
+Stakeholders contacted
+See #contributions in conferences above
+
+#online tutorials
+Visibility
+
+
+Interest for External Communities
+
+List of external communities
+Structural Biology community worldwide – INSTRUCT ESFRI community at European level
+
+Usability
+
+
+P4c POWERFIT WEB PORTAL
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+PowerFit
+
+Relevance as defined by experts
+Agreed by experts
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+Harnessing power of GPGPUs in HTC resources (grid) 
+
+Comparison with previous solution and/or with competitor
+There was not previous solution. Within INDIGO we pioneered the use of GPGPU-enabled grid resources
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+User-friendly web portal providing access to GPGPU resources by making use of docker container together with the INDIGO udocker solution on the grid site
+Number of submissions to the web portal
+
+
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as % 
+ 
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+PowerFit
+https://github.com/haddocking/powerfit 
+
+List of popular software integrated
+Integration was successful for popular software
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements appear
+
+Requirements Satisfied 
+Web portal is in production
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied
+
+Integration in testbed
+PowrFit web portal using the INDIGO udocker solution 
+
+In production on the EGI grid infrastructure
+http://milou.science.uu.nl/enmr/services/POWERFIT 
+Portal in production mode
+-
+Integration is not completed
+
+Test and Validation
+External users to the project are using the portal
+
+INDIGO docker containers users
+Number of external users
+
+
+Number of docker container downloads from the INDIGO repo
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as %
+Number of powerfit container downloads from the INDIGO repo
+-
+Test and Validation not completed
+
+Deployed in production
+DisVis Web Portal
+
+External users to the project are using the portal
+
+Access Link to production:
+http://milou.science.uu.nl/enmr/services/DISVIS/
+
+
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback13
+ Score>8
+
+
+
+Popularity
+
+#Users
+
+
+
+
+
+
+#Submissions
+Sustained or increased registration rate compared to previous period (last 6 months) – expressed as %
+
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as %
+
+
+
+Reliability
+
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+
+Feedback13
+ Score>8
+
+
+
+Support
+
+Helpdesk, documentation, training, in place
+Yes to all:
+Documentation:
+http://milou.science.uu.nl/cgi/enmr/services/POWERFIT/powerfit/help
+Example run:
+http://milou.science.uu.nl/cgi/enmr/services/POWERFIT/powerfit/example
+Support forum:
+http://ask.bioexcel.eu/c/powerfit
+Online tutorial:
+http://www.bonvinlab.org/education/powerfit-webserver/ 
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+#publications
+#contributions in conferences
+Specific per Case Study 
+1 publication
+5 contributions
+Knowledge Impact
+Time to publish
+Acceptance criteria
+
+Adoption by Research Community
+
+Agreement;
+Support; 
+#Users
+Specific per Case Study
+
+Accessibility
+Governance 
+Resources
+
+Sustainability
+
+External Funding The H2020 e-Infrastructure projects West-Life (grant no. 675858), EGI-Engage-MobrainCC (grant no. 654142)
+Specific per Case Study
+
+
+
+Dissemination 
+
+# Events;
+Stakeholders contacted
+See #contributions in conferences above
+
+#online tutorials
+Visibility
+
+
+Interest for External Communities
+
+List of external communities
+Structural Biology community worldwide – INSTRUCT ESFRI community at European level
+Usability
+
+P5 ENES
+
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Challenge addressed
+CMIP* experiments provide input for multi-model analytics experiments (e.g. trend analysis)
+Input data from multiple models needed
+Data distribution inherent in the infrastructure 
+Data download is a big barrier for end-users (download can take from several days to weeks!)
+Current infrastructure mainly for data sharing
+Data analysis mainly performed using client-side & sequential approaches
+Complexity of the data analysis needs more robust end-to-end support
+
+Relevance as defined by experts
+
+High
+
+In the ENES community, computing/analytics is a key challenge not addressed yet
+
+>4 in 1-5
+>=4 by the end of Y2
+
+Experts from the testbed (from LLNL and ORNL). 
+
+-
+Server-side approaches are under evaluation during 2017 in ESGF. 
+
+Adoption in production in the ESGF environment could suffer from some delay regarding, evaluation process, release timeline, etc.
+
+A demonstrator in the ESGF context with some production sites involved represents the final target. 
+
+
+Advance over state-of-the-art
+It was not possible to perform server-side, parallel data analysis, with the flexibility and level of automation provided by a cloud infrastructure.
+
+Previous solution were mainly command line based, sequential and client-side
+Comparison with previous solution and/or with competitor
+Better
+ 
+-
+
+
+INDIGO Added Value
+Indigo solution helps in: 
+- Paradigm shift from client- to server-side
+- Intrinsic data movement reduction
+- Lightweight end-user setup
+- Re-usability of data, final/intermediate products, workflows, etc. 
+- Complements, extends and interoperates with the ESGF stack
+- Provisioning of a “new and easy to use tool” for scientists
+- Drastic time-to-solution reduction
+
+Virtual Access to HPC / GPU;
+Elastic Cloud;
+Use of Future Gateway / Mobile Kit
+# INDIGO solutions useful
+
+FGEngine, Kepler, Ophidia IAM, Orchestrator, CLUES, IM
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+Initial Case Study is evolved
+
+Integrates popular software
+YES
+
+Community-based services where successfully integrated in the overall experiment/ architecture.
+List of software integrated
+
+UV-CDAT 
+OPeNDAP/
+THREDDS from the community
+Integration successful (Y)
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+Confirmed by M26 in D2.9
+-
+Additional requirements appear (potentially)
+
+Requirements Satisfied 
+
+See D2.10
+Confirmed for 1st and 2nd release
+Confronted 
+-
+A critical requirement is not fully satisfied (potentially)
+
+Integration in testbed
+Include a set of unit, functional and integration tests.
+
+Date, logs
+By M18, By M24
+-
+
+
+
+Test and Validation
+The testbed in ESGF represents the target testing environment 
+
+By M18 a first demonstrator
+By M24 a final one
+Date, tests
+See D2.8
+Agreed with WP3
+-
+
+
+Deployed in production
+By M24
+Access Link;
+#production sites
+
+3 sites from ESGF by M18
+>=3 sites by M24
+Link available; >1 site
+Accessibility
+
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+Opinion of >5 Qualified Users
+Yes! , Ok, No Score=Y-N
+ Score>8
+
+By M24
+
+Popularity
+
+#users
+>10
+
+By M24
+
+Reliability
+Sources: internal, e-infra, INDIGO
+Ratio of success;
+Availability
+>80%;
+>95%
+
+By M24
+
+Friendliness
+Opinion of >5 Qualified Users
+Yes! , Ok, No Score=Y-N
+ Score>8
+
+By M24
+
+Support
+Helpdesk, Documentation, Training
+
+Levels of support
+Yes to all
+
+By M24
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+#publications in journals;
+#contributions in conferences
+1
+
+2
+Knowledge Impact
+Time to publish
+Acceptance (it might be not easy to get in time a paper accepted for a journal)
+
+Adoption by Research Community
+
+Agreement;
+Support;
+#users
+-
+Accessibility
+Governance 
+Resources
+
+Sustainability
+
+
+
+
+EU H2020 Calls
+RDA calls
+
+Dissemination 
+
+#events;
+Stakeholders contacted
+There could be several EGU, AGU, ESGF, ENES meeting, RDA, BDEC
+Visibility
+
+
+Interest for External Communities
+
+List of external
+
+LBT
+EMSO
+
+
+Usability
+
+
+
+P6 E-CSG RELOADED: MUSEID-ITALIA USE CASE
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+E-CSG reloaded: MuseiD-Italia
+
+Relevance as defined by experts
+Agreed by partners
+-
+Community feedback may not be positive
+
+Advance over state-of-the-art
+
+Comparison with previous solutions and with other portals
+Score in survey within partners > 80%
+-
+
+
+INDIGO Added Value
+User-friendly web portal providing access to OneZone solutions
+Number of submissions to the web portal
+
+
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as %
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+We were forced to reconsider the original use case, due to internal technical constraints 
+
+
+Integrates popular software
+Yes
+OneZone, Kepler
+Integration was successful for OneZone, still to be tested integration with Kepler
+Usability
+There is the possibility that Kepler will not be included in the final version of the use case, due to work-flow redundancy
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed
+-
+
+
+Requirements Satisfied 
+
+See D2.9, D2.10
+To be confirmed
+-
+
+
+Integration in testbed
+Integration through CNAF Bologna
+Several tests for the various steps of integration
+Almost all scheduled tests with OneData had positive feedback, waiting for final mid-February tests
+
+-
+Integration is not yet completed
+
+Test and Validation
+
+Date to be confirmed by the end of February
+
+To be confirmed
+-
+
+
+Deployed in production
+Access to a OneZone area dedicated to MuseiD-Italia partners
+
+Access link to area
+Provided after deployment
+Accessibility
+Still not deployed live
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback
+ Score > 8
+-
+
+
+Popularity
+
+Number of partners adhering to MuseiD-Italia
+Sustained or increased registration rate compared to previous period (last 6 months) – expressed as %
+-
+
+
+Reliability
+
+Number of materials uploaded through the OneZone solution
+Sustained or increased number of submissions compared to previous period (last 6 months) – expressed as %
+-
+
+
+Friendliness
+
+Ratio of success
+>95%
+-
+Impact of providers
+
+Support
+
+Availability
+>95%
+-
+Impact of providers
+
+
+
+
+
+-
+
+IMPACT
+Knowledge creation
+
+Update of documentation for partners
+Uploading of new documentation for partners on MDI website
+-
+
+
+Adoption by Research Community
+
+
+
+
+
+
+Sustainability
+
+Number of publications about the project
+At least one publication
+-
+
+
+Dissemination 
+
+Number of partners adhering to MuseiD-Italia
+Sustained or increased registration rate compared to previous period (last 6 months) – expressed as %
+Accessibility
+ 
+
+Interest for External Communities
+
+External funding
+At least two financing partners, other than Ministry funding
+-
+Might be difficult to find other institutional partners
+
+
+P8 ELIXIR
+
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Create a Galaxy Instance provider based on INDIGO technologies.
+
+Key features:
+- User-friendly web front-end to configure virtual hardware and the Galaxy instance.
+- Each Galaxy instance automatically configured according to the virtual
+machine hardware.
+- Galaxy instance fully customizable by the instance administrator with tools and reference data.
+- Insulation of data from any other instance
+on the same platform and from the cloud service administrators
+Relevance as defined by experts
+Agreed by experts
+(at least 3 names and statements)
+
+TO BE DEFINED
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+Our service offers the possibility to create a Galaxy workspace without the need to maintain hardware and software infrastructure.
+
+Currently is possible to deploy Galaxy on commercial cloud solutions, like Amazon. It is a costly solution  with serious ethical drawbacks, being data accessible by the private vendor of the service.
+
+Galaxy public servers offers a ready to use environment, but with limited quota and limited customization possibilities.
+
+It is possible to install Galaxy on a local instance. It is costly, time consuming solution and needs skilled people to maintain the infrastructure.
+Comparison with previous solution and/or with competitor
+Better
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+The Orchestrator grants compatibility with both OpenNebula and Openstack, leaving to the service provider chooising between VMs or Docker.
+
+FutureGateway provides an user-friendly access to the service platform.
+
+OneData and filesystem encryption grant privacy and security for data management.
+
+Cluster elasticity is provided by CLUES  component.
+Virtual Access to HPC / GPU;
+Elastic Cloud;
+Use of Future Gateway / 
+Mobile Kit
+And others.
+# INDIGO components/ solutions useful; link to new features, increase in performance, etc. 
+
+FutureGateway Portal, Orchestrator, OneData, IAM, IasS Storage, TOSCA, CLUES
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+YES
+List of popular software integrated
+
+GALAXY [1-2]
+
+References:
+[1] https://galaxyproject.org/
+
+[2] Enis Afgan, Dannon Baker, Marius van den Beek, Daniel
+Blankenberg, Dave Bouvier, Martin Čech, John Chilton, Dave
+Clements, Nate Coraor, Carl Eberhard, Björn Grüning, Aysam
+Guerler, Jennifer Hillman-Jackson, Greg Von Kuster, Eric
+Rasche, Nicola Soranzo, Nitesh Turaga, James Taylor, Anton
+Nekrutenko, and Jeremy Goecks. The Galaxy platform for
+accessible, reproducible and collaborative biomedical
+analyses: 2016 update. Nucleic Acids Research (2016) doi:
+10.1093/nar/gkw343
+Integration was successful for popular software
+YES
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements appear (potentially)
+
+Requirements Satisfied 
+EL#1: ok (1st rel.)
+EL#2: ok (1st rel)
+EL#3: Partially
+EL#4: Partially (1st rel)
+EL#5: ok (1st rel) 
+EL#6: ok (1st rel)
+EL#7: foresee for 2nd rel.
+EL#8: ok (1st rel)
+EL#9: ok (1st rel)
+EL#10: ok (1st rel)
+EL#11: partially (1st rel)
+EL#12: ok (1st rel)
+EL#13: ok (1st rel)
+EL#14: partially (1st rel)
+EL#15: ok (1st rel)
+EL#16: ok (1st rel)
+EL#17: ok (1st rel)
+EL#18: foresee for 2nd rel
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied
+(potentially)
+
+
+Integration in testbed
+INDIGO testbed integration started during September 2016.
+
+Date, logs, demos
+Provided after integration
+-
+Integration is not completed
+
+Test and Validation
+An array of more than 30 automatic tests on the instance and tools functionalities will be executed to validate and test the service. Installed tools are tested one by one and results compared to reference results.
+
+Date, tests results, see D2.8
+Evidence will be agreed with WP3
+-
+Test and Validation not completed
+
+Deployed in production
+The production phase is foreseen by the end of the INDIGO project.
+Access Link to production;
+#production sites
+Provided after entering in production
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback13
+ Score>8
+
+By M24
+
+Popularity
+Currently not available
+#Users
+
+
+By M24
+
+Reliability
+Currently not available
+Ratio of success
+Availability
+
+
+By M24
+
+Friendliness
+Currently not available
+Feedback13
+ 
+
+By M24
+
+Support
+Currently not available
+Helpdesk, documentation, training, in place
+Yes to all. By M24
+
+By M24
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+In direct relation to this Use Case
+Easy access to computational infrastructural resources to bioninformaticians and life-scientists and speed up the deployment of complex analysis workflows over large datasets.
+#publications
+#contributions in conferences
+BITS 2016 (poster)
+DI4R 2016 (poster)
+Hackathon@NETTAB 2016 (presentation)
+ELIXIR All Hands Meeting 2017 (flash talk)
+Knowledge Impact
+Time to publish
+Acceptance criteria
+
+Adoption by Research Community
+Currently not available
+Agreement;
+Support; 
+#Users
+
+Accessibility
+Governance 
+Resources
+
+Sustainability
+Currently not available
+External Funding
+
+
+
+
+Dissemination 
+BITS 2016 (poster)
+DI4R 2016 (poster)
+Hackathon@NETTAB 2016 (presentation)
+ELIXIR All Hands Meeting 2017 (flash talk)
+
+# Events;
+Stakeholders contacted
+4
+Visibility
+
+
+Interest for External Communities
+Currently not available
+List of external communities
+Galaxy Community
+Usability
+
+
+
+P9 EMSO
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Seafloor observatory data (eg., seismological) are used for geohazard observation and monitoring.
+The goals of the case study are to:
+1) Have access to distributed data storage through a single and user-friendly access point. 
+2) Use a parallel computing system to have a drastic decrease of computation time and to explore new computing methodologies that exploit cloud potential.
+Relevance as defined by experts
+Agreed by experts
+Experts: S. Monna, N. Marcucci, G. Marinaro, D. Embriaco
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+Improvement of data sharing within our group and other users. Exploitation of parallel computing.
+Comparison with previous solution and/or with competitor
+Positive user experience, Increase of executed job throughput
+-
+New alternatives developed in parallel:
+We might check alternative solutions, but not at the moment
+
+INDIGO Added Value
+Data access, sharing and processing described in the case study is fit for a parallel computing environment. 
+Data access and usability.
+Use of Ophidia on seafloor observatory data.
+Job processing on  cloud infrastructure
+Positive experience of users with data access and sharing using INDIGO solutions. 
+Use of INDIGO solutions in a realistic case (eg. data processing)
+Satisfying increase in performance in job processing-with respect to previous situation.
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+Yes
+R, sac
+Integration was successful for popular software
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+Additional requirements appear
+
+Requirements Satisfied 
+INDIGO components were correctly mapped to our requirements.
+Testing components in implementation stage, 
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+A critical requirement is not fully satisfied
+
+Integration in testbed
+1.Execution of R script on PaaS (INFN Bar) through Tosca template
+2.Installed ONEZONE and ONEPROVIDER using Scenario 2.0
+3.Installation of ONZONE on virtual server hosted at INGV
+Date, logs, demos
+1.July 2016
+
+2.November-December 2016
+
+3.22 Dec 2016
+
+Provided after integration
+-
+Integration is not completed
+
+Test and Validation
+1. Analysed together with Ophidia team Ophidia’s potential use for our community and developed a C library for Seismic data import in Ophidia
+Date, tests results, see D2.8
+
+1. From July 2016 to January 2017
+Evidence will be agreed with WP3
+-
+Test and Validation not completed
+
+Deployed in production
+We plan to implement the chosen INDIGO solutions in integrated configuration in the next six months
+
+# of solutions successfully integrated
+
+Provided after entering in production
+Accessibility
+
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+User opinion
+Feedback
+ Score>8
+
+
+
+Popularity
+N/A at this point
+#Users
+>5
+
+
+
+Reliability
+N/A at this point
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+N/A at this point
+Feedback
+ Score>8
+
+
+
+Support
+N/A at this point
+Helpdesk, documentation, training, in place
+Yes to all
+
+
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+Making users in our community aware of possibilities offered by INDIGO solutions that we have employed 
+#publications, technical reports;
+#contributions in conferences
+2 contributions to conferences
+Knowledge Impact
+DI4R, EGU
+
+
+Adoption by Research Community
+N/A at this point
+
+Cannot determine at this stage
+Accessibility
+
+
+Sustainability
+N/A at this point
+External Funding
+Cannot determine at this stage
+
+
+
+Dissemination 
+Poster on our CS at DI4R and ENVRI+ week. Abstract submitted and accepted for EGU2017
+Presentation presented at EMSO-Dev WP6 meeting in Rome on 17 January 2017
+
+# Events;
+Stakeholders contacted
+>3
+
+Visibility
+DI4R, ENVRI+
+EGU, EMSO-DeV
+
+Interest for External Communities
+Possible connections between INDIGO and EMSO-Dev are being explored. Possible interest of Oceanographers in EMSO
+Possibly seafloor observatory people but too early to be sure
+
+Number of people from different communities- not possible to quantify at this point
+
+Usability
+
+
+P10 DARIAH
+
+
+TOPIC
+Description
+Measure proposed
+Success Indicator
+Input to global KPIs
+Potential/ Found Issues
+VALUE
+Value of Case Study 
+Data repository platform for DARIAH – a repository used for managing and storing A&H data collections in the cloud
+Relevance as defined by experts
+Agreed by experts
+(at least 3 names and statements)
+
+To be defined (app. July/August 2017)
+-
+Community feedback not positive
+
+Advance over state-of-the-art
+Fostering the usage of cloud infrastructure in the digital arts and humanities research community by providing a user-friendly interface for easily deploying repository instances in the cloud. 
+Comparison with previous solution and/or with competitor
+
+
+To the best of our knowledge, currently there are no solutions for easily deploying Open Access repositories in the cloud for DARIAH 
+-
+New alternatives developed in parallel
+
+INDIGO Added Value
+Automatization of repository instances deployment in the cloud. 
+Virtual Access to HPC / GPU;
+Elastic Cloud;
+Use of Future Gateway / 
+Mobile Kit
+And others.
+# INDIGO components/ solutions useful; link to new features, increase in performance, etc. 
+
+Future Gateway
+IAM
+Mesos/Marathon
+TOSCA 
+
+Usability
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+Case Study Well-Defined
+Requirements, roles, d2.1
+Contrast D2.1
+Confirmed in D2.10
+-
+-
+
+Integrates popular software
+Yes
+List of popular software integrated
+
+Zenodo (based on Invenio)
+
+
+Integration was successful for popular software
+Usability
+
+
+Requirements Detailed
+
+See D2.4
+To be confirmed by M26 in D2.9
+-
+
+
+Requirements Satisfied 
+
+See D2.9, D2.10, check on 1st and 2nd release
+Confirmed for 1st release, confirm for 2nd release
+-
+
+
+Integration in testbed
+Test instance  of Zenodo installed on ingrid.pt 
+Date, logs, demos
+
+Provided after integration
+
+December 2016
+-
+Integration with IAM, TOSCA and Mesos is not completed
+
+Test and Validation
+The repository instances can be deployed in the cloud; data can be stored and retrieved. 
+
+Date, tests results, see D2.8
+Evidence will be agreed with WP3
+-
+Test and Validation not completed
+
+Deployed in production
+External users can deploy their own repository instances in the cloud and store/retrieve data. 
+
+Access Link to production;
+
+# pulls from the indigo_dc app docker hub
+#running instances
+Provided after entering in production
+Accessibility
+Decision/ Agreement on production pending
+
+
+
+
+
+
+
+USER ADOPTION
+General Satisfaction
+
+Feedback13
+ Score>8
+
+
+
+Popularity
+
+#Users
+>5 (target)
+
+
+
+Reliability
+
+Ratio of success
+Availability
+>80%
+>95%
+
+Impact of providers
+
+Friendliness
+
+Feedback13
+ Score>8
+
+
+
+Support
+ 
+Documentation, demos, training in place
+Yes to all
+
+Not yet done
+
+
+
+
+
+
+
+IMPACT
+Knowledge creation
+Making users in the DARIAH community aware of this solution.
+#publications
+#contributions in conferences
+#contribution in community events
+1 poster contribution to DI4R 
+1 poster & 1 presentation in DARIAH annual meeting
+Knowledge Impact
+DI4R
+DARIAH Annual meeting
+
+Adoption by Research Community
+
+Support; 
+#Users
+Specific per Case Study
+
+Accessibility
+Governance 
+Resources
+
+Sustainability
+Planning to include the service in the DARIAH service catalogue (in production) which is being prepared for the DARIAH-ERIC production phase (planned for 2019)
+External Funding 
+Specific per Case Study
+
+
+
+Dissemination 
+
+# Events;
+
+# posts in DARIAH communication channels (mail&web&social media)
+2
+
+1
+
+Visibility
+
+
+Interest for External Communities
+
+List of external communities
+Specific per Case Study
+
+Usability
+
+
+
