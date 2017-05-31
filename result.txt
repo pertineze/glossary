@@ -1,0 +1,509 @@
+Lista terms
+Term: Registration
+Description:
+Registration or data registration is a curation process on a data object by which the DO receives a persistent object identifier (PID) from a trusted registration authority.
+
+
+Reference: 
+
+
+
+Term: Data_Repository
+Description:
+A Data Repository is a type of repository where data, data objects and data collections are permanently stored, managed and made accessible.
+
+
+Reference: 
+
+
+
+Term: Procedure
+Description:
+Specification of the processing steps that are used to change digital entities or properties of digital entities.
+
+
+Reference: 
+
+
+
+Term: Framework
+Description:
+A reusable design (models and/or code) that can be refined (specialized) and extended to provide some portion of the overall functionality of many applications.
+
+
+Reference: 
+
+
+
+Term: Archive
+Description:
+An archive is a place or collection containing & managing records, documents, or other materials of interest which is the result of archiving processes.
+
+
+Reference: 
+
+
+
+Term: Data_Collection
+Description:
+Data Collection is a type of collection formed by some agent driven aggregation or grouping process whose parts/elements are made of data/datum. A collection is identified by a PID and described like other types of DOs by metadata.
+
+
+Reference: 
+
+
+
+Term: Data_Analysis
+Description:
+Data Analysis, also called Analysis, is a data lifecycle stage that involves the techniques used to satisfy analyst goals of producing informative knowledge from organized data.
+
+
+Reference: 
+
+
+
+Term: Container
+Description:
+Something able to hold objects.
+
+
+Reference: 
+
+
+
+Term: Workflow
+Description:
+A set of chained operations carried out in a defined sequence.
+
+
+Reference: 
+
+
+
+Term: Policy
+Description:
+Specification of how a property of a digital entity will be controlled.
+
+
+Reference: 
+
+
+
+Term: Resource
+Description:
+aka Web resource - In the context of the web, resources are addressable units of information  which are addressed through Uniform Resource Identifiers or URIs making them identified, described, and discoverable components  of the Web's distributed data environment.
+
+
+
+Reference: 
+
+
+
+Term: Reference_data
+Description:
+Reference data, in the context of research data management, are domain & community standardized data objects that define the set of permissible values to be used to populate other data object.
+
+
+Reference: 
+
+
+
+Term: Index
+Description:
+An index is  a type of metadata Descriptive metadata used in support of the indexing operation.
+
+
+Reference: 
+
+
+
+Term: Communication
+Description:
+Communication is a process by which information is exchanged between individuals or systems using a common system of symbols, signs, or behavior.
+
+
+Reference: 
+
+
+
+Term: Research_Data
+Description:
+Research data is data collected, observed, or created usually in a digital form, for purposes of data analysis to produce original research information and results.
+
+
+Reference: 
+
+
+
+Term: Property
+Description:
+A Property is the smallest, atomic part of metadata written and read by the PIT API. It is defined in the Type registry. It consists of the elements:
+* identifier: a PID
+* name: the name of the property, for example "license", "checksum"
+* range: data type, for example String, Date, ...
+* namespace: the content related scope of the property. Could be a project like RDA, EUDAT
+* description: a human readable description in English
+
+
+
+Reference: 
+
+
+
+Term: System
+Description:
+A whole made from some combination of interacting elements organized to function to achieve one or more stated purposes.
+
+
+Reference: 
+
+
+
+Term: Lifecycle
+Description:
+Lifecycle (or data lifecycle) is the sequence of processing that a data undergoes from its creation, documentation through its storage in a repository and eventual  disposal.
+
+
+Reference: 
+
+
+
+Term: Infrastructure
+Description:
+Definition (first attempt): is the basic physical and organizational structure needed for the operation of various necessary applications so that they can function on top of this structure. In SE terms it is a system existing of interconnected elements organized to achieve one or more stated purposes.
+
+
+Reference: 
+
+
+
+Term: Data_Access
+Description:
+Data Access is a process that enables users to retrieve or read published data.
+
+
+Reference: 
+
+
+
+Term: Access
+Description:
+Data access typically refers to software and activities related to storing, retrieving, or acting on data housed in a some stored form
+
+
+Reference: 
+
+
+
+Term: Services
+Description:
+Definition (first attempt): in the DFIG context a service is a function that is being executed on request delivering certain expected results.
+
+
+Reference: 
+
+
+
+Term: Data_Processing
+Description:
+Data processing is a type of processing that includes a series of operations that are carried out on data, especially by digital computers, in order to acquire,present, transform or interpret, data and it's informational content. When data is in a digital form data processing is digital processing.
+
+
+Reference: 
+
+
+
+Term: Publication
+Description:
+The process of making digital object (re)usable by others
+
+
+Reference: 
+
+
+
+Term: Analytics
+Description:
+Analytics is the discovery of meaningful patterns in data. The resulting synthesis may be used for description and prediction.  The synthesis often affords a new understanding or a form of improved knowledge derived from the analysis.
+
+
+Reference: 
+
+
+
+Term: Copyright
+Description:
+Copyright is a type of right used to monopolize a crative work such as research, art and literature
+
+
+Reference: 
+
+
+
+Term: Reference_model
+Description:
+Definition (first attempt): is a design covering a class of frameworks with the following characteristics: (1) it can be used to generate more specific models that still belong to the class and (2) it can be used to compare a concrete framework design to identify whether it belongs to the same class.
+
+
+Reference: 
+
+
+
+Term: Information
+Description:
+Information is data that has been processed and/or communicated into a form, such as records, that is meaningful to the recipient
+
+
+Reference: 
+
+
+
+Term: Work
+Description:
+ToDo
+
+
+Reference: 
+
+
+
+Term: Type
+Description:
+For the PIT API, a Type is a collection of properties. It is stored in the Type Registry.
+
+
+Reference: 
+
+
+
+Term: Data_Preservation
+Description:
+PreservationÂ is a set of information management activities/services within archiving & curation in which specific items of data/collections are maintained over time so that they can still be accessed and understood through changes in technology.Â 
+
+
+Reference: 
+
+
+
+Term: Data
+Description:
+Data is a collection of propositions representing an agent's understanding of some entity or state. (Peters Document)
+
+
+Reference: 
+
+
+
+Term: Dataset
+Description:
+A Data Set is a type of managed data collection. It is the basic unit of managed data and has a persistent identifier and metadata.
+
+
+Reference: 
+
+
+
+Term: Catalog
+Description:
+A catalog is at type of collection which describes and points to a features of the collection.
+
+
+Reference: 
+
+
+
+Term: Ecosystem
+Description:
+In general use an ecosystem is  a complex network or community of interconnected and interacting system of components.
+
+
+Reference: 
+
+
+
+Term: Accessible
+Description:
+Data (and metadata) is Accessible, according to FAIR principle if it:(meta)data are retrievable by their identifier using a standardized communications protocol and
+
+the protocol is open, free, and universally implementable and
+
+the protocol allows for an authentication and authorization procedure, where necessary and
+
+metadata are accessible, even when the data are no longer available.
+
+
+
+Reference: 
+
+
+
+Term: Data_management
+Description:
+Data management is a process of controlling & managing data and its associated information acquired during observation and research.
+
+
+Reference: 
+
+
+
+Term: Metadata
+Description:
+The PIT API can be used to create, edit and read metadata assigned to a PID. In this context. metadata is describing a PID itself and the content which the PID resolves to.
+
+
+Reference: 
+
+
+
+Term: Object
+Description:
+An Object is any part of the perceivable or conceivable world. A type of entity.
+
+
+Reference: 
+
+
+
+Term: Architecture
+Description:
+Fundamental organization of a system embodied in its components, their relationships to each other, and to the environment, and the principles guiding its design and evolution.
+
+
+Reference: 
+
+
+
+Term: Interoperability
+Description:
+Interoperability describes the extent to which systems and devices can work together, exchange data, and interpret that shared data. For two systems to be interoperable, they must be able to exchange data and subsequently present that data such that it can be understood by a user.
+Interoperability generally means the ability to exchange data routinely/freely between systems, because each system would have at least knowledge of other systems formats in which data is exchanged. A stronger type of data exchange can include knowledge of the meaning of some of the data content.
+
+
+
+Reference: 
+
+
+
+Term: Identifier
+Description:
+An identifier (ala digital identifier) is a bitstring that is used to provide Object Identity.
+
+
+Reference: 
+
+
+
+Term: Collection
+Description:
+A collection is a digital object which is identified by a PID and consists of a set or a list of PIDs/Ids and a set of additional pointers/links and metadata together with each PID/Id.
+A collection can be given explicitely by naming each PIDs/Id directly as well as implicitly by a generating rule.
+
+A collection is called finite, if the set of PIDs/Ids, generated by iteratively resolving its "sub-"collections, is finite.
+
+
+
+Reference: 
+
+
+
+Term: Protocols
+Description:
+AKA System Protocols. Definition (first attempt): is the special set of rules that regulates how components within a system are (or can) interacting
+
+
+Reference: 
+
+
+
+Term: File
+Description:
+In contrast to a bit stream, a digital (computer processable) file is a representation partitioned into chunks that are conveniently laid out to managed on computer processing system.
+
+
+
+Reference: 
+
+
+
+Term: Concept
+Description:
+ A concept is the smallest, unambiguous unit of thought.
+
+
+Reference: 
+
+
+
+Term: Components
+Description:
+Aka, a system component. An entity with discrete structure, such as an assembly or software module, within a system considered at a particular level of analysis.
+
+
+Reference: 
+
+
+
+Term: Preservation
+Description:
+Preservation is the process of Storing data and digital material, such as Digital Objects in a Repository for a long period of time.
+
+
+Reference: 
+
+
+
+Term: Intellectual_Property_Rights
+Description:
+Intellectual Property Rights are a type of right that includes copyright, sui generis database rights, patents, and other similar laws that establish a regime for access, use, or reuse of information, including research data or metadata.
+
+
+Reference: 
+
+
+
+Term: Repository
+Description:
+Repository (aka Data Repository or Digital Data Repository) is a searchable and queryable interfacing entity that is able to store, manage, maintain and curate Data/Digital Objects.
+
+
+Reference: 
+
+
+
+Term: Archiving
+Description:
+Archiving is one type of curation activity which ensures that data is properly selected, stored, can be accessed and that its logical and physical integrity is maintained over time, including security and authenticity.
+
+
+Reference: 
+
+
+
+Term: Aggregation
+Description:
+An aggregation is general the bringing together of elements.
+
+
+Reference: 
+
+
+
+Term: Open_Access
+Description:
+Open Access (to data) essentially means that online and stored digital information is free of charge, as well as  free of mostcopyright and licensing restrictions that prevent its open and free use.
+
+
+
+Reference: 
+
+
+
+Term: Relations
+Description:
+Definition (first attempt): In the context of DFIG the term relation was used to indicate how the different components within a system are "linked" to fulfill the tasks. "Relations" are thus defined by the services they are making use of and by the interface specifications.
+
+
+Reference: 
+
+
+
